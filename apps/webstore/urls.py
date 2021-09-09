@@ -1,7 +1,9 @@
 from django.urls import path
-from .views import kayu
+from .views import *
 
 
-urlpatterns = {
+urlpatterns = [
     path('', kayu, name='kayu'),
-}
+    path('shop/', shop,name='shop'),
+    path('blog/', blog,name='blog'),
+]

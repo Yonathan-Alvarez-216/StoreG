@@ -142,74 +142,35 @@
                 </div>
             </div>
             <div class="product">
+                {%if allproductos%}
                 <div class="row">
+                    {%for arrayproduct in allproductos%}
                     <div class="col-md-3">
                         <div class="s_product">
-                            <img alt="" src="img/t-shart.jpg">
+
+                            <img class="img-fluid" alt="" src="{{arrayproduct.img}}">
                             <div class="s_overlay"></div>
                             <h2>SALE!</h2>
                             <h3>T-SHIRT</h3>
-                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>ADD TO CART</h4>
+                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i><a href="{%url 'webstore:blog'%}">ADD TO CART</a></h4>
+                            
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="rate">
-                                    <h3>Pocket Tee</h3>
+                                    <h3>{{arrayproduct.modelo}}</h3>
                                     <p><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><span><i aria-hidden="true" class="fa fa-star"></i></span></p>
-                                    <h5>$250</h5>
+                                    <h5>{{arrayproduct.precio}}</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="s_product">
-                            <img alt="" src="img/t-shart1.jpg">
-                            <div class="s_overlay"></div>
-                            <h3>T-SHIRT</h3>
-                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>ADD TO CART</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="rate">
-                                    <h3>Pocket Tee</h3>
-                                    <p><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><span><i aria-hidden="true" class="fa fa-star"></i></span></p>
-                                    <h5>$250</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="s_product">
-                            <img alt="" src="img/t-shart2.jpg">
-                            <div class="s_overlay"></div>
-                            <h3>T-SHIRT</h3>
-                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>ADD TO CART</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="rate">
-                                    <h3>Pocket Tee</h3>
-                                    <p><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i></p>
-                                    <h5>$250</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="s_product">
-                            <img alt="" src="img/t-shart3.jpg">
-                            <div class="s_overlay"></div>
-                            <h2>NEW!</h2>
-                            <h3>JACKET</h3>
-                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i>ADD TO CART</h4>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="rate">
-                                    <h3>Pocket Tee</h3>
-                                    <p><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i><i aria-hidden="true" class="fa fa-star"></i></p>
-                                    <h5>$250</h5>
-                                </div>
+                    {%endfor%}
+					{%else%}
+                    No hay productos
+                    {%endif%}
+
+
                             </div>
                         </div>
                     </div>
