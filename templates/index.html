@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Us</title>
+    <title>INICIO</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="{%static 'css/bootstrap.css'%}">
@@ -46,29 +46,26 @@
             <div class="row">
                 <div class="col-md-3">
                    <div class="logo">
-                    <a href="#"><h2>LOGO</h2></a>
+                    <a href="#"><img src="https://i.ibb.co/tZKjXn7/Logo.png" alt="Logo" height="110" width="160" ></a>
                    </div>
                 </div>
                 <div class="col-md-7">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">HOME</a></li>
-                      <li><a href="{%url 'webstore:shop'%}">SHOP</a></li>
-                      <li><a href="{%url 'webstore:blog'%}">BLOG</a></li>
-                      <li><a href="#">SHORTCODE</a></li>
-                      <li><a href="#">FEATURE</a></li>
-                      <li><a href="#">PAGES</a></li>
+                      <li class="active"><a href="{%url 'webstore:kayu'%}">INICIO</a></li>
+                      <li><a href="{%url 'webstore:shop'%}">TIENDA</a></li>
+                    <!--  <li><a href="{%url 'webstore:blog'%}">BLOG</a></li> -->
+                     <li><a href="{%url 'webstore:faq'%}">FAQ</a></li>
+                     <!-- <li><a href="#">FEATURE</a></li> -->
+                      <li><a href="{%url 'webstore:soporte'%}">SOPORTE</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <div class="cart">
-                        <p><i class="fa fa-cart-arrow-down"></i><sup>0</sup> &#36;&nbsp;&nbsp;7.00</p>
-                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                    <div class="header-part">
-                    <p>HOME &nbsp;&nbsp;&nbsp;<span><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;ABOUT US</span></p>
+                    <p>INICIO &nbsp;&nbsp;&nbsp;<span><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp QUIENES SOMOS</span></p>
                     </div>
                 </div>
             </div>
@@ -76,47 +73,46 @@
     </section>
 </header>
 <section class="slider">
-    <img src="{%static 'img/slider-about.jpg'%}" alt="Slider">
-    <h3>ABOUT US</h3>
+ <img src="https://i.ibb.co/YP41nsh/1576575386-575032-1576577718-noticia-normal-recorte1.jpg" alt="1576575386-575032-1576577718-noticia-normal-recorte1" border="0">
+    <h3>SOBRE NOSOTROS</h3>
 </section>
 <section class="our_skill">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="text">
-                    <h2>Who are we?</h2>
-                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-been the industry's standard dummy text ever since the 1500s, when an 
-printer took a galley of type</p>
-               <p>and scrambled it to make a type specimen book. It has survived not only five 
-but also the leap into electronic typesetting, remaining essentially unchanged
-larised in the 1960s with the release of</p>
+                    <h2>Quienes somos nosotros</h2>
+                    <p>Somos una empresa de venta de productos de tecnología enfocada en
+                        simplificar tu vida con la variedad de productos que nosotros te ofrecemos en nuestras tiendas.</p>
+               <p>Nosotros ofrecemos una gran cantidad de productos que pueden serte
+                   útil en tu vida cotidiana, productos que son de primera calidad y garantizados.</p>
                 </div>
             </div>
             <div class="col-md-6">
                  <div class="progress_bar">
-                  <h2>Our skills</h2>
-                  <p>Photoshop</p>
+                  <h2>Nuestras Características</h2>
+                  <p>Variedad de Productos</p>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
                   </div>
-                  <p>Wordpress</p>
+                  <p>Calidad de los Productos</p>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:88%"></div>
                   </div>
-                  <p>Html/Css</p>
+                  <p>Conocimientos de Tecnologia</p>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%"></div>
                   </div>
-                  <p>Php</p>
+                  <p>Trato a los Clientes</p>
                   <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:55%"></div>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%"></div>
                   </div>
                   </div>
             </div>
         </div>
     </div>
 </section>
+<!--
 <section class="features">
     <div class="container">
         <div class="row">
@@ -148,19 +144,20 @@ larised in the 1960s with the release of</p>
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
 <section class="team">
    <div class="clear"></div>
     <div class="container">
        <div class="row">
            <div class="col-md-12">
-               <h2>Meet The Team</h2>
+               <h2>Equipo de Desarrollo y Fundadores</h2>
            </div>
        </div>
         <div class="row">
             <div class="col-md-3">
                <div class="teams">
-                    <img src="img/tema1.jpg">
+                   <img src="https://i.ibb.co/8gnxSn6/DEVxd.jpg" alt="DEVxd" width="130" height="240" border="0">
                 <div class="icon">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -168,12 +165,12 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="overlay"></div>
             </div>
-                <h3>Michael Williams</h3>
-                <p>CREATIVE LEAD</p>
+                <h3>Yona_AF </h3>
+                <p>Director General</p>
             </div>
             <div class="col-md-3">
                <div class="teams">
-                    <img src="img/tema2.jpg">
+                    <img src="https://i.ibb.co/HH2pwL6/DEXA.jpg" alt="DEXA" width="130" height="240" border="0">
                 <div class="icon">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -181,12 +178,12 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="overlay"></div>
             </div>
-                <h3>Michael Williams</h3>
-                <p>CREATIVE LEAD</p>
+                <h3>TonyAGL</h3>
+                <p>Director Creativo</p>
             </div>
             <div class="col-md-3">
                <div class="teams">
-                    <img src="img/tema3.jpg">
+                   <img src="https://i.ibb.co/F0hwXRk/Whats-App-Image-2021-09-22-at-2-51-09-PM.jpg" alt="Whats-App-Image-2021-09-22-at-2-51-09-PM" width="130" height="240" border="0">
                 <div class="icon">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -194,12 +191,12 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="overlay"></div>
             </div>
-                <h3>Michael Williams</h3>
-                <p>CREATIVE LEAD</p>
+                <h3>Josue_TM</h3>
+                <p>Asesor</p>
             </div>
             <div class="col-md-3">
                <div class="teams">
-                    <img src="img/tema4.jpg">
+                  <img src="https://i.ibb.co/0CHXfrR/Whats-App-Image-2021-09-22-at-3-16-40-PM.jpg" alt="Whats-App-Image-2021-09-22-at-3-16-40-PM" width="130" height="240" border="0">
                 <div class="icon">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -207,12 +204,12 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="overlay"></div>
             </div>
-                <h3>Michael Williams</h3>
-                <p>CREATIVE LEAD</p>
+                <h3>Chino</h3>
+                <p>Director de Ventas</p>
             </div>
             <div class="col-md-3">
                <div class="teams">
-                    <img src="img/tema5.jpg">
+                    <img src="https://i.ibb.co/8gnxSn6/DEVxd.jpg" alt="DEVxd" width="130" height="240" border="0">
                 <div class="icon">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -220,12 +217,12 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="overlay"></div>
             </div>
-                <h3>Michael Williams</h3>
-                <p>CREATIVE LEAD</p>
+                <h3>Yona_AF</h3>
+                <p>Developer</p>
             </div>
             <div class="col-md-3">
                <div class="teams">
-                    <img src="img/tema6.jpg">
+                    <img src="https://i.ibb.co/8gnxSn6/DEVxd.jpg" alt="DEVxd" width="130" height="240" border="0">
                 <div class="icon">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -233,12 +230,12 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="overlay"></div>
             </div>
-                <h3>Michael Williams</h3>
-                <p>CREATIVE LEAD</p>
+                <h3>Yona_AF</h3>
+                <p>Site Contributor</p>
             </div>
             <div class="col-md-3">
                <div class="teams">
-                    <img src="img/tema1.jpg">
+                    <img src="https://i.ibb.co/6nb2k67/65220762.png" alt="65220762" width="130" height="240" border="0">
                 <div class="icon">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -246,12 +243,12 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="overlay"></div>
             </div>
-                <h3>Michael Williams</h3>
-                <p>CREATIVE LEAD</p>
+                <h3>Z3Я0</h3>
+                <p>GITHUB_Developer</p>
             </div>
             <div class="col-md-3">
                <div class="teams">
-                    <img src="img/tema2.jpg">
+                    <img src="https://i.ibb.co/88dCCXb/85f6414b1b35d431296a3dd243f4a903-400x400.png" alt="85f6414b1b35d431296a3dd243f4a903-400x400" width="130" height="240" border="0">
                 <div class="icon">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -259,8 +256,8 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="overlay"></div>
             </div>
-                <h3>Michael Williams</h3>
-                <p>CREATIVE LEAD</p>
+                <h3>JAYDE</h3>
+                <p>Bootstrap Developer</p>
             </div>
         </div>
     </div>
@@ -270,27 +267,27 @@ larised in the 1960s with the release of</p>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2>INFORMATION</h2>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <h2>INFORMACION</h2>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
                 </div>
                 <div class="col-md-4 center">
-                    <h2>INFORMATION</h2>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <h2>INFORMACION</h2>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
                 </div>
                 <div class="col-md-4">
                     <div class="footer-contact">
                         <h2>CONTACT US</h2>
-                        <a href="#"><p><i class="fa fa-map-marker" aria-hidden="true"></i>Rangpur , Bangladesh</p></a>
-                        <a href="#"><p><i class="fa fa-phone" aria-hidden="true"></i>+88 01761070282</p></a>
-                        <a href="#"><p><i class="fa fa-envelope" aria-hidden="true"></i>sshahriar458@gmail.com</p></a>
+                        <a href="#"><p><i class="fa fa-map-marker" aria-hidden="true"></i>Baja Verapaz , Guatemala</p></a>
+                        <a href="#"><p><i class="fa fa-phone" aria-hidden="true"></i>+502 01761070282</p></a>
+                        <a href="#"><p><i class="fa fa-envelope" aria-hidden="true"></i>zerosama69X@gmail.com</p></a>
                     </div>
                 </div>
             </div>
@@ -307,12 +304,12 @@ larised in the 1960s with the release of</p>
                 </div>
                 <div class="col-md-8">
                     <div class="footer_logo">
-                        <img src="img/fedex.png">
-                        <img src="img/master-card.png">
-                        <img src="img/paypal.png">
-                        <img src="img/visa.png">
-                        <img src="img/american-express.png">
-                        <img src="img/dhl.png">
+                        <img src="{%static 'img/fedex.png'%}">
+                        <img src="{%static 'img/master-card.png'%}">
+                        <img src="{%static 'img/paypal.png'%}">
+                        <img src="{%static 'img/visa.png'%}">
+                        <img src="{%static 'img/american-express.png'%}">
+                        <img src="{%static 'img/dhl.png'%}">
                     </div>
                 </div>
             </div>

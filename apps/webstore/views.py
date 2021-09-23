@@ -10,3 +10,9 @@ def shop(request):
 
 def blog(request):
     return render(request, 'single-product.html')
+
+def soporte(request):
+    return render(request, 'contact.html')
+
+def faq(request):
+    return render(request, 'faq.html')

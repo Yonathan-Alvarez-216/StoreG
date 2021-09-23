@@ -15,7 +15,7 @@
   border-radius: 2px;
   height: 125px;
   padding: 0;
-  width: 100%;
+  width: 75%;
     position: relative
 }
 .slider-container::before {
@@ -34,24 +34,24 @@
   color: #f39c12;
   right: -20px;
 }
-#slider img { 
-	width:250px; 
-	height:125px; 
-	margin:0px; 
-	display:inline-block  
+#slider img {
+	width:150px;
+	height:80px;
+	margin:0px;
+	display:inline-block
 }
 
 #slider li {
-	width:210px
+	width:180px
 }
 .pager {
   margin: 0;
 }
 .bx-wrapper {
-  width: 100%!important;
+  width: 75%!important;
 }
 .bx-window{
-    width: 100%!important;
+    width: 75%!important;
 }
 
 

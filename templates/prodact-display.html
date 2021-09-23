@@ -22,9 +22,9 @@
             <div class="row">
                 <div class="col-md-4">
                     <ul>
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="#">dashbord</a></li>
+                        <li><a href="#">Cuenta</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -38,31 +38,32 @@
                 </div>
                 <div class="col-md-4">
                    <div class="a-right">
-                        <a href="#"><p><span><i class="fa fa-user"></i></span>Login</p></a>
-                        <a href="#"><p><span><i class="fa fa-pencil"></i></span>Register</p></a>
+                        <a href="#"><p><span><i class="fa fa-user"></i></span>Entrar</p></a>
+                        <a href="#"><p><span><i class="fa fa-pencil"></i></span>Registrarse</p></a>
                    </div>
                 </div>
             </div>
         </div>
-</section>
+    </section>
 <section class="header-catagory">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <div class="catagory">
-                <p><a href="#"><i class="fa fa-phone"></i> <span>(+800) 123 456 7890</span> </a> <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>contact@support.com</span> </a></p>
+                <p><a href="#"><i class="fa fa-phone"></i> <span>+502 01761070282</span> </a>
+                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>zerosama69X@gmail.com</span> </a></p>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                     <form method="post" action="#">
                         <input type="text" placeholder="Search for product">
-                    <select>
+                   <!-- <select>
                         <option>One</option>
                         <option>Two</option>
                         <option>Three</option>
                         <option>Four</option>
                         <option>Five</option>
-                    </select>
+                    </select> -->
                     <button><i class="fa fa-search"></i></button>
                     </form>
                     </div>
@@ -77,22 +78,22 @@
             <div class="row">
                 <div class="col-md-3">
                    <div class="logo">
-                    <a href="#"><h2>STOREG</h2></a>
+                   <a href="#"><img src="https://i.ibb.co/tZKjXn7/Logo.png" alt="Logo" height="110" width="160" ></a>
                    </div>
                 </div>
                 <div class="col-md-7">
                     <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">HOME</a></li>
-                      <li><a href="#">SHOP</a></li>
-                      <li><a href="#">BLOG</a></li>
-                      <li><a href="#">SHORTCODE</a></li>
-                      <li><a href="#">FEATURE</a></li>
-                      <li><a href="#">PAGES</a></li>
+                        <li class="active"><a href="{%url 'webstore:kayu'%}">INICIO</a></li>
+                      <li><a href="{%url 'webstore:shop'%}">TIENDA</a></li>
+                      <li><a href="{%url 'webstore:faq'%}">FAQ</a></li>
+                     <!-- <li><a href="#">SHORTCODE</a></li> -->
+                     <!-- <li><a href="#">FEATURE</a></li> -->
+                      <li><a href="{%url 'webstore:soporte'%}">SOPORTE</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <div class="cart">
-                        <p><i class="fa fa-cart-arrow-down"></i><sup>0</sup> &#36;&nbsp;&nbsp;0.00</p>
+                        <!--<p><i class="fa fa-cart-arrow-down"></i><sup>0</sup> &#36;&nbsp;&nbsp;0.00</p> -->
                     </div>
                 </div>
             </div>
@@ -100,13 +101,13 @@
     </section>
 </header>
 <section class="header-feahion">
-    <img src="img/header-image.jpg" alt="">
+   <img src="https://i.ibb.co/twRHcBz/sadasf.png" alt="sadasf" border="0">
     <div class="header-text">
-        <h4>FREE SHIPPING ON ORDERS OVER $100!</h4>
-        <h3>HOT NEW RANGE <br> IN STOCK!</h3>
+       <!-- <h4>FREE SHIPPING ON ORDERS OVER $100!</h4>
+        <h3>HOT NEW RANGE <br> IN STOCK!</h3> -->
     </div>
 </section>
-
+<!--
 <section class="product-s-display">
     <div class="container">
         <div class="row">
@@ -130,13 +131,14 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+<!--Recien Ingreso -->
 <div class="related-products">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="bar">
-                        <h2>Recommended for you</h2>
+                        <h2>Nuestros Productos</h2>
                         <img alt="" src="img/bar.jpg">
                     </div>
                 </div>
@@ -151,8 +153,8 @@
                             <img class="img-fluid" alt="" src="{{arrayproduct.img}}">
                             <div class="s_overlay"></div>
                             <h2>SALE!</h2>
-                            <h3>T-SHIRT</h3>
-                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i><a href="{%url 'webstore:blog'%}">ADD TO CART</a></h4>
+
+                            <h4><i aria-hidden="true" class="fa fa-cart-arrow-down"></i><a href="{%url 'webstore:blog'%}">Ver mas</a></h4>
                             
                         </div>
                         <div class="row">
@@ -178,20 +180,19 @@
             </div>
         </div>
 </div>
+
+<!--Productos Recomendados-->
+<!--
 <section class="season">
    <img src="img/season.jpg" alt="">
     <div class="ovearlay"></div>
-    <div class="text">
-        <h2>End of season sale </h2>
-        <h3>Up to 35% off Women’s Denim </h3>
-    </div>
 </section>
 <section class="latest-product">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="bar">
-                <h2>Latest products</h2>
+                <h2>Productos Recomendados</h2>
                     <img src="img/bar.jpg" alt="">
                 </div>
             </div>
@@ -200,8 +201,7 @@
             <div class="col-md-3">
                 <div class="product-single">
                    <div class="single-overlay"></div>
-                    <img src="img/product-single1.jpg" alt="">
-                    <a href="img/product-single1.jpg"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                   <img src="https://i.ibb.co/9q7jX2B/Bocina-2.jpg" alt="Bocina-2" border="0">
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -259,7 +259,7 @@
                         <div class="prodact-s-text">
                                 <h3>Pocket Tee</h3>
                                 <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
-                                <h5>$250</h5>
+                                <h5>$2550</h5>
                         </div>
                     </div>
                 </div>
@@ -267,7 +267,8 @@
         </div>
     </div>
 </section>
-
+<!-- Aqui acaba recomendados-->
+<!--
 <section class="t-shart-brand">
     <div class="container">
         <div class="row">
@@ -440,13 +441,14 @@
         </div>
     </div>
 </section>
-    
+-->
 <section class="brands">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="bar">
-                    <h2>BRANDS WE STOCK</h2>
+                    <h2>
+MARCAS QUE ALMACENAMOS</h2>
                     <img src="img/bar.jpg" alt="">
                 </div>
             </div>
@@ -460,24 +462,27 @@
             <div class="col-md-12">
                 <div class="slider-container">
                     <ul id="slider">
-                        <li><a href="#"><img src="{%static 'img/brand-img1.jpg'%}"></a></li>
-                        <li><a href="#"><img src="{%static 'img/brand-img2.jpg'%}"></a></li>
-                        <li><a href="#"><img src="{%static 'img/brand-img3.jpg'%}"></a></li>
-                        <li><a href="#"><img src="{%static 'img/brand-img4.jpg'%}"></a></li>
-                        <li><a href="#"><img src="{%static 'img/brand-img5.jpg'%}"></a></li>
+                        <li><a href="#"><img src="https://i.ibb.co/0mc6Rwz/Asus.png" alt="Asus" border="0"></a></li>
+                        <li><a href="#"><img src="https://i.ibb.co/sJPfwW8/descarga.png" alt="descarga" border="0"></a></li>
+                        <li><a href="#"><img src="https://i.ibb.co/QKm7dfC/Logo-Razer-2017.png" alt="Logo-Razer-2017" border="0"></li>
+                        <li><a href="#"><img src="https://i.ibb.co/3FwpPxZ/d21639fb-61ed-44c0-bb72-df9698e523fe.png" alt="d21639fb-61ed-44c0-bb72-df9698e523fe" border="0"></a></li>
+                        <li><a href="#"><img src="https://i.ibb.co/BVn2kpD/Aorus.png" alt="Aorus" border="0"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    
+<section>
+ <img src="https://i.ibb.co/k1Bpqky/VACIO.png" alt="VACIO" border="0">
+</section>
+<!--
     <section class="featured">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="f-images-text">
-                        <h2>Best Selling</h2>
+            <h2>Best Selling</h2>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="img-text">
@@ -595,13 +600,13 @@
             </div>
         </div>
     </section>
-    
+    <!--
     <section class="fashion">
       <div class="f-overlay"></div>
        <img src="img/footer-top-images.jpg" alt="">
         <h2>FASHION NEW</h2>
     </section>
-
+    -->
     
 
 <footer>
@@ -609,27 +614,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2>INFORMATION</h2>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <h2>INFORMACION</h2>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
                 </div>
                 <div class="col-md-4 center">
-                    <h2>INFORMATION</h2>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
-                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
+                    <h2>INFORMACION</h2>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
+                    <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>--------</p></a>
                 </div>
                 <div class="col-md-4">
                     <div class="footer-contact">
                         <h2>CONTACT US</h2>
-                        <a href="#"><p><i class="fa fa-map-marker" aria-hidden="true"></i>Rangpur , Bangladesh</p></a>
-                        <a href="#"><p><i class="fa fa-phone" aria-hidden="true"></i>+88 01761070282</p></a>
-                        <a href="#"><p><i class="fa fa-envelope" aria-hidden="true"></i>sshahriar458@gmail.com</p></a>
+                        <a href="#"><p><i class="fa fa-map-marker" aria-hidden="true"></i>Baja Verapaz , Guatemala</p></a>
+                        <a href="#"><p><i class="fa fa-phone" aria-hidden="true"></i>+502 01761070282</p></a>
+                        <a href="#"><p><i class="fa fa-envelope" aria-hidden="true"></i>zerosama69X@gmail.com</p></a>
                     </div>
                 </div>
             </div>
@@ -644,14 +649,14 @@
                         <p>Copyright © 2014  Designed by <span>shawon</span></p>
                     </div>
                 </div>
-                <div class="col-md-8">
+         <div class="col-md-8">
                     <div class="footer_logo">
-                        <img src="img/fedex.png">
-                        <img src="img/master-card.png">
-                        <img src="img/paypal.png">
-                        <img src="img/visa.png">
-                        <img src="img/american-express.png">
-                        <img src="img/dhl.png">
+                        <img src="{%static 'img/fedex.png'%}">
+                        <img src="{%static 'img/master-card.png'%}">
+                        <img src="{%static 'img/paypal.png'%}">
+                        <img src="{%static 'img/visa.png'%}">
+                        <img src="{%static 'img/american-express.png'%}">
+                        <img src="{%static 'img/dhl.png'%}">
                     </div>
                 </div>
             </div>
